@@ -17,7 +17,10 @@ body {
 .littlish-primary-button {
     color: #f17831;
 }
-
+.vjs-poster {
+    background-size: cover !important;
+    background-position: inherit;
+  }
 
 
 .header-wrapper {

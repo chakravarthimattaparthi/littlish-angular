@@ -40,13 +40,8 @@ export class HomeComponent implements OnInit {
 
   renderSliders() {
 
-
     setTimeout(() => {
-      if(this.loadCount === 2) {
-        this.loadCount = 0;
-      } else {
-        this.loadCount = this.loadCount + 1;
-      }
+
       this.loading = false;
       setTimeout(() => {
         this.loading = false;
@@ -54,6 +49,12 @@ export class HomeComponent implements OnInit {
         this.bottomTitle = this.titles[this.loadCount].bottomTitle;
         setTimeout(() => {
           this.loading = true;
+          if(this.loadCount === 2) {
+            this.loadCount = 0;
+          } else {
+            this.loadCount = this.loadCount + 1;
+          }
+      
         })
         
       },2500)

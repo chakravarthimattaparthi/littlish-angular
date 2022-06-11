@@ -27,3 +27,6 @@
     transition: all 0.4s;
     transform: translate(-50%, -50%);
 }
+video[poster]{
+    object-fit: cover;
+  }
