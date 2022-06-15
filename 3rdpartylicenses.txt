@@ -429,6 +429,9 @@ Apache-2.0
    limitations under the License.
 
 
+ngx-owl-carousel-o
+MIT
+
 rxjs
 Apache-2.0
                                Apache License
