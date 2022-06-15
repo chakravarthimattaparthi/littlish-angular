@@ -18,6 +18,8 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@types/gsap": "^3.0.0",
+    "gsap": "^3.10.4",
     "ngx-owl-carousel-2": "^6.0.10",
     "ngx-owl-carousel-o": "^7.0.2",
     "rxjs": "~6.6.0",

@@ -578,140 +578,22 @@ section#footer {
     text-align: center;
     display: block;
 }
-/* .card-block
-{
-    position:relative;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+  #container {
+    width:100%; 
+    height:100%; 
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
 }
-.card-block:before, .card-block:after
-{
-  content:"";
+.dot{
+    width:35px;
+    height:35px;
     position:absolute;
-    z-index:-1;
-    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
-    top:0;
-    bottom:0;
-    left:10px;
-    right:10px;
-    -moz-border-radius:100px / 10px;
-    border-radius:100px / 10px;
-}
-.card-block:after
-{
-  right:10px;
-    left:auto;
-    -webkit-transform:skew(8deg) rotate(3deg);
-       -moz-transform:skew(8deg) rotate(3deg);
-        -ms-transform:skew(8deg) rotate(3deg);
-         -o-transform:skew(8deg) rotate(3deg);
-            transform:skew(8deg) rotate(3deg);
-}
-
-
- */
-
-
-
-
-
-
-
-
-
-#leafContainer    
-{   
-    position: absolute;   
-    width: 100%;   
-    height: 100%;   
-}   
-/* This CSS rule is applied to all div elements in the leafContainer div.  
-   It styles and animates each leafDiv.  
-*/  
-#leafContainer > div    
-{   
-    position: absolute;   
-    width: 100px;   
-    height: 100px;   
-  
-    /* We use the following properties to apply the fade and drop animations to each leaf.  
-       Each of these properties takes two values. These values respectively match a setting  
-       for fade and drop.  
-    */  
-    animation-iteration-count: infinite, infinite;   
-    animation-direction: normal, normal;   
-    animation-timing-function: linear, ease-in;   
-}  
-#leafContainer img {
-    width: 20px !important;
-} 
-  
-/* This CSS rule is applied to all img elements directly inside div elements which are  
-   directly inside the leafContainer div. In other words, it matches the ‘img’ elements  
-   inside the leafDivs which are created in the createALeaf() function.  
-*/  
-#leafContainer > div > img {   
-     position: absolute;   
-     width: 100px;   
-     height: 100px;   
-  
-    /* We use the following properties to adjust the clockwiseSpin or counterclockwiseSpinAndFlip  
-       animations on each leaf.  
-       The createALeaf function in the Leaves.js file determines whether a leaf has the   
-       clockwiseSpin or counterclockwiseSpinAndFlip animation.  
-    */  
-     animation-iteration-count: infinite;   
-     animation-direction: alternate;   
-     animation-timing-function: ease-in-out;   
-     transform-origin: 50% -100%;   
-}   
-  
-/* Hides a leaf towards the very end of the animation */  
-@keyframes fade   
-{   
-    /* Show a leaf while into or below 95 percent of the animation and hide it, otherwise */  
-    0%   { opacity: 1; }   
-    95%  { opacity: 1; }   
-    100% { opacity: 0; }   
-}   
-  
-/* Makes a leaf fall from -300 to 600 pixels in the y-axis */  
-@keyframes drop   
-{   
-    /* Move a leaf to -300 pixels in the y-axis at the start of the animation */  
-    0%   { transform: translate(0px, –50px); }   
-    /* Move a leaf to 600 pixels in the y-axis at the end of the animation */  
-    100% { transform: translate(0px, 650px); }   
-}   
-  
-/* Rotates a leaf from -50 to 50 degrees in 2D space */  
-@keyframes clockwiseSpin   
-{   
-    /* Rotate a leaf by -50 degrees in 2D space at the start of the animation */  
-    0%   { transform: rotate(-50deg); }   
-    /*  Rotate a leaf by 50 degrees in 2D space at the end of the animation */  
-    100% { transform: rotate(50deg); }   
-}   
-  
-/* Flips a leaf and rotates it from 50 to -50 degrees in 2D space */  
-@keyframes counterclockwiseSpinAndFlip    
-{   
-    /* Flip a leaf and rotate it by 50 degrees in 2D space at the start of the animation */  
-    0%   { transform: scale(-1, 1) rotate(50deg); }   
-    /* Flip a leaf and rotate it by -50 degrees in 2D space at the end of the animation */  
-    100% { transform: scale(-1, 1) rotate(-50deg); }   
-}   
-
-
-
-
-
-
-
-
+    background-image: url(http://www.clipartqueen.com/image-files/red-lobed-fall-clipart-leaf.png);
+    background-size: 100% 100%;
+  }
 
 
 
@@ -744,4 +626,31 @@ section#footer {
     height: 500px;
     position: relative;
     overflow: hidden;
+}
+
+
+
+
+.info-container {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    position: relative;
+}
+.info-block {
+    width: 33%;
+    justify-content: center;
+    text-align: center;
+}
+.info-count {
+    display: block;
+    font-size: 42px;
+    font-weight: bold;
+}
+.into-title {
+    font-size: 18px;
+}
+.info-block img {
+    width: 41px;
+    margin-bottom: 10px;
 }

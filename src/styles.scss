@@ -482,3 +482,13 @@ section#footer {
     height: 100%;
     transform: translate(-50%, -50%);
 }
+
+
+
+.dot{
+    width:35px;
+    height:35px;
+    position:absolute;
+    background-image: url("../src/assets/icons/icon2.png");
+    background-size: 100% 100%;
+   }
