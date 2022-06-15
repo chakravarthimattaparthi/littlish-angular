@@ -1,0 +1,26 @@
+<!-- <div>Some tags before</div>
+<owl-carousel-o [options]="customOptions">
+  <ng-template carouselSlide>Slide 1</ng-template>  
+  <ng-template carouselSlide>Slide 2</ng-template>  
+  <ng-template carouselSlide>Slide 3</ng-template>  
+</owl-carousel-o>
+<div>Some tags after</div> -->
+<div class="container-fluid">
+    <div style="position: relative;margin-left: -20px;">
+        <div class="parent-image">
+           <img [ngClass]="loading == true ? 'animate__animated animate__fadeIn top-title delay-title-1' : 'animate__animated animate__fadeOut delay-title-2 top-title'" src="../../../assets/parents-image/{{photo}}">
+            
+        </div>
+    </div>
+    <div class="parent-commetns">
+        <div class="quotation-bg"><img src="../../../assets/icons/quotes.png"></div>
+        <div class="parents-comments-inner-wrapper">
+        <h4 [ngClass]="loading == true ? 'animate__animated animate__fadeInUp top-title delay-title-1' : 'animate__animated animate__fadeOutDown delay-title-2 top-title'" class="parent-name">{{parentName}}</h4>
+        <span [ngClass]="loading == true ? 'animate__animated animate__fadeInUp bottom-title delay-title-2': 'animate__animated animate__fadeOutDown delay-title-1 bottom-title'" class="parent-designation">{{designation}}</span>
+        <p [ngClass]="loading == true ? 'animate__animated animate__fadeInUp bottom-title delay-title-3': 'animate__animated animate__fadeOutDown delay-title-4 bottom-title'"  class="parents-comments">{{comments}}</p>
+        </div>
+    </div>
+    <div class="parent-circle"></div>
+    <div class="cirle-1"></div>
+    <div class="cirle-2"></div>
+</div>

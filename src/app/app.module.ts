@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './common-components/home/home.component';
 import { HeaderComponent } from './common-components/header/header.component';
 import { VjsPlayerComponent } from './common/vjs-player/vjs-player.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ParentsTestimonialComponent } from './common-components/parents-testimonial/parents-testimonial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    VjsPlayerComponent
+    VjsPlayerComponent,
+    ParentsTestimonialComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
     "ngx-owl-carousel-2": "^6.0.10",
+    "ngx-owl-carousel-o": "^7.0.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "video.js": "^7.19.2",
